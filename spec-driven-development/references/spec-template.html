@@ -1,0 +1,136 @@
+<h1>Development Spec: {{TITLE}}</h1>
+<p><span data-type="status" data-color="yellow">Draft</span></p>
+
+<div data-type="panel-info">
+  <p><strong>Purpose:</strong> This live doc is the implementation contract for the development task. Preserve this structure for consistency. If a section is not applicable, write <em>Not in scope</em> and explain why.</p>
+</div>
+
+<h2>1. Metadata</h2>
+<table>
+  <thead><tr><th>Field</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>Status</td><td><span data-type="status" data-color="yellow">Draft</span></td></tr>
+    <tr><td>Owner/requester</td><td>{{OWNER}}</td></tr>
+    <tr><td>Date</td><td>{{DATE}}</td></tr>
+    <tr><td>Tracking</td><td>{{TRACKING_OR_NONE}}</td></tr>
+    <tr><td>Confluence parent</td><td>{{CONFLUENCE_PARENT}}</td></tr>
+    <tr><td>Branch/worktree slug</td><td><code>{{BRANCH_SLUG}}</code></td></tr>
+    <tr><td>Risk level</td><td>{{RISK_LEVEL}}</td></tr>
+  </tbody>
+</table>
+
+<h2>2. Summary</h2>
+<p>{{SUMMARY}}</p>
+<ul>
+  <li><strong>Goal:</strong> {{GOAL}}</li>
+  <li><strong>Users / systems affected:</strong> {{AFFECTED_USERS_OR_SYSTEMS}}</li>
+  <li><strong>Non-goals:</strong> {{NON_GOALS}}</li>
+  <li><strong>Definition of done:</strong> {{DEFINITION_OF_DONE}}</li>
+</ul>
+
+<h2>3. Context and Research</h2>
+<ul>
+  <li><strong>Current behavior:</strong> {{CURRENT_BEHAVIOR}}</li>
+  <li><strong>Desired behavior:</strong> {{DESIRED_BEHAVIOR}}</li>
+  <li><strong>Relevant files/services:</strong> {{RELEVANT_FILES_AND_SERVICES}}</li>
+  <li><strong>Existing patterns/tests:</strong> {{EXISTING_PATTERNS_AND_TESTS}}</li>
+  <li><strong>Docs/links:</strong> {{DOCS_AND_LINKS}}</li>
+</ul>
+
+<h2>4. Scope</h2>
+<table>
+  <thead><tr><th>Repo / workstream</th><th>In scope?</th><th>Reason</th><th>Owner</th><th>Worktree branch</th></tr></thead>
+  <tbody>
+    <tr><td>{{WORKSTREAM_1}}</td><td>{{WORKSTREAM_1_IN_SCOPE}}</td><td>{{WORKSTREAM_1_REASON}}</td><td>{{WORKSTREAM_1_OWNER}}</td><td><code>{{WORKSTREAM_1_BRANCH}}</code></td></tr>
+    <tr><td>{{WORKSTREAM_2}}</td><td>{{WORKSTREAM_2_IN_SCOPE}}</td><td>{{WORKSTREAM_2_REASON}}</td><td>{{WORKSTREAM_2_OWNER}}</td><td><code>{{WORKSTREAM_2_BRANCH}}</code></td></tr>
+    <tr><td>{{WORKSTREAM_3}}</td><td>{{WORKSTREAM_3_IN_SCOPE}}</td><td>{{WORKSTREAM_3_REASON}}</td><td>{{WORKSTREAM_3_OWNER}}</td><td><code>{{WORKSTREAM_3_BRANCH}}</code></td></tr>
+  </tbody>
+</table>
+
+<h2>5. Design / Implementation Contract</h2>
+<table>
+  <thead><tr><th>Contract item</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>Approach</td><td>{{APPROACH}}</td></tr>
+    <tr><td>API / interface changes</td><td>{{API_OR_INTERFACE_CHANGES}}</td></tr>
+    <tr><td>Data model / schema changes</td><td>{{DATA_OR_SCHEMA_CHANGES}}</td></tr>
+    <tr><td>Feature flags / rollout controls</td><td>{{FEATURE_FLAGS_OR_ROLLOUT}}</td></tr>
+    <tr><td>Security / privacy considerations</td><td>{{SECURITY_PRIVACY}}</td></tr>
+    <tr><td>Backward compatibility</td><td>{{BACKWARD_COMPATIBILITY}}</td></tr>
+    <tr><td>Rollback plan</td><td>{{ROLLBACK_PLAN}}</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Per-workstream Plan</h2>
+<h3>{{WORKSTREAM_1}}</h3>
+<ul>
+  <li><strong>Files:</strong> {{WORKSTREAM_1_FILES}}</li>
+  <li><strong>Changes:</strong> {{WORKSTREAM_1_CHANGES}}</li>
+  <li><strong>Tests:</strong> {{WORKSTREAM_1_TESTS}}</li>
+</ul>
+<h3>{{WORKSTREAM_2}}</h3>
+<ul>
+  <li><strong>Files:</strong> {{WORKSTREAM_2_FILES}}</li>
+  <li><strong>Changes:</strong> {{WORKSTREAM_2_CHANGES}}</li>
+  <li><strong>Tests:</strong> {{WORKSTREAM_2_TESTS}}</li>
+</ul>
+<h3>{{WORKSTREAM_3}}</h3>
+<ul>
+  <li><strong>Files:</strong> {{WORKSTREAM_3_FILES}}</li>
+  <li><strong>Changes:</strong> {{WORKSTREAM_3_CHANGES}}</li>
+  <li><strong>Tests:</strong> {{WORKSTREAM_3_TESTS}}</li>
+</ul>
+
+<h2>7. End-to-end Validation Loop</h2>
+<table>
+  <thead><tr><th>Field</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>Validation type</td><td>{{VALIDATION_TYPE}}</td></tr>
+    <tr><td>Environment / site</td><td>{{VALIDATION_ENVIRONMENT}}</td></tr>
+    <tr><td>Setup / seed data</td><td>{{VALIDATION_SETUP}}</td></tr>
+    <tr><td>Command or browser flow</td><td>{{VALIDATION_COMMAND_OR_FLOW}}</td></tr>
+    <tr><td>Success criteria</td><td>{{VALIDATION_SUCCESS_CRITERIA}}</td></tr>
+    <tr><td>Cleanup</td><td>{{VALIDATION_CLEANUP}}</td></tr>
+    <tr><td>Blocked fallback</td><td>{{VALIDATION_BLOCKED_FALLBACK}}</td></tr>
+  </tbody>
+</table>
+
+<h2>8. Test Plan</h2>
+<table>
+  <thead><tr><th>Layer</th><th>Command / method</th><th>Required?</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Unit</td><td>{{UNIT_TESTS}}</td><td>{{UNIT_REQUIRED}}</td><td>{{UNIT_NOTES}}</td></tr>
+    <tr><td>Integration</td><td>{{INTEGRATION_TESTS}}</td><td>{{INTEGRATION_REQUIRED}}</td><td>{{INTEGRATION_NOTES}}</td></tr>
+    <tr><td>E2E / smoke</td><td>{{E2E_TESTS}}</td><td>{{E2E_REQUIRED}}</td><td>{{E2E_NOTES}}</td></tr>
+    <tr><td>Static checks</td><td>{{STATIC_CHECKS}}</td><td>{{STATIC_REQUIRED}}</td><td>{{STATIC_NOTES}}</td></tr>
+  </tbody>
+</table>
+
+<h2>9. Rollout and Operations</h2>
+<ul>
+  <li><strong>Rollout sequence:</strong> {{ROLLOUT_SEQUENCE}}</li>
+  <li><strong>Monitoring:</strong> {{MONITORING}}</li>
+  <li><strong>Alerting:</strong> {{ALERTING}}</li>
+  <li><strong>Runbook / support:</strong> {{RUNBOOK}}</li>
+</ul>
+
+<h2>10. Risks and Open Questions</h2>
+<table>
+  <thead><tr><th>Item</th><th>Impact</th><th>Decision / mitigation</th></tr></thead>
+  <tbody>
+    <tr><td>{{RISK_OR_QUESTION_1}}</td><td>{{IMPACT_1}}</td><td>{{MITIGATION_1}}</td></tr>
+    <tr><td>{{RISK_OR_QUESTION_2}}</td><td>{{IMPACT_2}}</td><td>{{MITIGATION_2}}</td></tr>
+    <tr><td>{{RISK_OR_QUESTION_3}}</td><td>{{IMPACT_3}}</td><td>{{MITIGATION_3}}</td></tr>
+  </tbody>
+</table>
+
+<h2>11. Review Notes</h2>
+<p>{{SPEC_REVIEW_NOTES}}</p>
+
+<h2>12. Human Approval Checklist</h2>
+<ul data-type="task-list">
+  <li data-type="task-item"><input type="checkbox"> Scope and non-goals are correct.</li>
+  <li data-type="task-item"><input type="checkbox"> Implementation contract is specific enough for sub-processes.</li>
+  <li data-type="task-item"><input type="checkbox"> E2E validation loop is acceptable or fallback is explicitly approved.</li>
+  <li data-type="task-item"><input type="checkbox"> Rollout and rollback plan are acceptable.</li>
+</ul>

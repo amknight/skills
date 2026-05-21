@@ -1,0 +1,91 @@
+<h1>Implementation Report: {{TITLE}}</h1>
+<p><span data-type="status" data-color="green">Implemented</span></p>
+
+<div data-type="panel-info">
+  <p><strong>Purpose:</strong> This page records what was implemented, what was validated, and what remains open. It is generated at the end of the spec-driven development workflow when the user chooses to publish final documentation to Confluence.</p>
+</div>
+
+<h2>1. Metadata</h2>
+<table>
+  <thead><tr><th>Field</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>Task</td><td>{{TITLE}}</td></tr>
+    <tr><td>Owner/requester</td><td>{{OWNER}}</td></tr>
+    <tr><td>Date completed</td><td>{{DATE_COMPLETED}}</td></tr>
+    <tr><td>Planning spec</td><td>{{SPEC_LINK_OR_NONE}}</td></tr>
+    <tr><td>Tracking</td><td>{{TRACKING_OR_NONE}}</td></tr>
+    <tr><td>Overall status</td><td>{{OVERALL_STATUS}}</td></tr>
+  </tbody>
+</table>
+
+<h2>2. Executive Summary</h2>
+<p>{{EXECUTIVE_SUMMARY}}</p>
+<ul>
+  <li><strong>Outcome:</strong> {{OUTCOME}}</li>
+  <li><strong>User-visible changes:</strong> {{USER_VISIBLE_CHANGES}}</li>
+  <li><strong>Operational impact:</strong> {{OPERATIONAL_IMPACT}}</li>
+  <li><strong>Residual risk:</strong> {{RESIDUAL_RISK}}</li>
+</ul>
+
+<h2>3. Implementation Summary</h2>
+<table>
+  <thead><tr><th>Workstream / repo</th><th>Branch</th><th>Commits</th><th>Status</th><th>Summary</th></tr></thead>
+  <tbody>
+    <tr><td>{{WORKSTREAM_1}}</td><td><code>{{WORKSTREAM_1_BRANCH}}</code></td><td>{{WORKSTREAM_1_COMMITS}}</td><td>{{WORKSTREAM_1_STATUS}}</td><td>{{WORKSTREAM_1_SUMMARY}}</td></tr>
+    <tr><td>{{WORKSTREAM_2}}</td><td><code>{{WORKSTREAM_2_BRANCH}}</code></td><td>{{WORKSTREAM_2_COMMITS}}</td><td>{{WORKSTREAM_2_STATUS}}</td><td>{{WORKSTREAM_2_SUMMARY}}</td></tr>
+    <tr><td>{{WORKSTREAM_3}}</td><td><code>{{WORKSTREAM_3_BRANCH}}</code></td><td>{{WORKSTREAM_3_COMMITS}}</td><td>{{WORKSTREAM_3_STATUS}}</td><td>{{WORKSTREAM_3_SUMMARY}}</td></tr>
+  </tbody>
+</table>
+
+<h2>4. Changed Files</h2>
+<table>
+  <thead><tr><th>Workstream / repo</th><th>Files changed</th></tr></thead>
+  <tbody>
+    <tr><td>{{WORKSTREAM_1}}</td><td>{{WORKSTREAM_1_FILES}}</td></tr>
+    <tr><td>{{WORKSTREAM_2}}</td><td>{{WORKSTREAM_2_FILES}}</td></tr>
+    <tr><td>{{WORKSTREAM_3}}</td><td>{{WORKSTREAM_3_FILES}}</td></tr>
+  </tbody>
+</table>
+
+<h2>5. Review and Feedback Resolution</h2>
+<table>
+  <thead><tr><th>Workstream / repo</th><th>Review result</th><th>Feedback fixes</th><th>Needs discussion</th></tr></thead>
+  <tbody>
+    <tr><td>{{WORKSTREAM_1}}</td><td>{{WORKSTREAM_1_REVIEW}}</td><td>{{WORKSTREAM_1_FEEDBACK_FIXES}}</td><td>{{WORKSTREAM_1_NEEDS_DISCUSSION}}</td></tr>
+    <tr><td>{{WORKSTREAM_2}}</td><td>{{WORKSTREAM_2_REVIEW}}</td><td>{{WORKSTREAM_2_FEEDBACK_FIXES}}</td><td>{{WORKSTREAM_2_NEEDS_DISCUSSION}}</td></tr>
+    <tr><td>{{WORKSTREAM_3}}</td><td>{{WORKSTREAM_3_REVIEW}}</td><td>{{WORKSTREAM_3_FEEDBACK_FIXES}}</td><td>{{WORKSTREAM_3_NEEDS_DISCUSSION}}</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Validation Evidence</h2>
+<table>
+  <thead><tr><th>Validation loop / check</th><th>Environment</th><th>Command or flow</th><th>Result</th><th>Evidence</th></tr></thead>
+  <tbody>
+    <tr><td>{{VALIDATION_1_NAME}}</td><td>{{VALIDATION_1_ENV}}</td><td>{{VALIDATION_1_COMMAND_OR_FLOW}}</td><td>{{VALIDATION_1_RESULT}}</td><td>{{VALIDATION_1_EVIDENCE}}</td></tr>
+    <tr><td>{{VALIDATION_2_NAME}}</td><td>{{VALIDATION_2_ENV}}</td><td>{{VALIDATION_2_COMMAND_OR_FLOW}}</td><td>{{VALIDATION_2_RESULT}}</td><td>{{VALIDATION_2_EVIDENCE}}</td></tr>
+    <tr><td>{{VALIDATION_3_NAME}}</td><td>{{VALIDATION_3_ENV}}</td><td>{{VALIDATION_3_COMMAND_OR_FLOW}}</td><td>{{VALIDATION_3_RESULT}}</td><td>{{VALIDATION_3_EVIDENCE}}</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Rollout, Cleanup, and Follow-up</h2>
+<ul>
+  <li><strong>Rollout status:</strong> {{ROLLOUT_STATUS}}</li>
+  <li><strong>Cleanup completed:</strong> {{CLEANUP_COMPLETED}}</li>
+  <li><strong>Rollback notes:</strong> {{ROLLBACK_NOTES}}</li>
+  <li><strong>Follow-up tasks:</strong> {{FOLLOW_UP_TASKS}}</li>
+</ul>
+
+<h2>8. Links</h2>
+<ul>
+  <li><strong>Pull requests:</strong> {{PULL_REQUEST_LINKS}}</li>
+  <li><strong>Builds / pipelines:</strong> {{BUILD_OR_PIPELINE_LINKS}}</li>
+  <li><strong>Logs / evidence files:</strong> {{LOG_OR_EVIDENCE_LINKS}}</li>
+  <li><strong>Related docs:</strong> {{RELATED_DOCS}}</li>
+</ul>
+
+<h2>9. Open Risks / Needs Discussion</h2>
+<ul>
+  <li>{{OPEN_RISK_OR_DISCUSSION_1}}</li>
+  <li>{{OPEN_RISK_OR_DISCUSSION_2}}</li>
+  <li>{{OPEN_RISK_OR_DISCUSSION_3}}</li>
+</ul>
