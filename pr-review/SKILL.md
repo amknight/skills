@@ -26,12 +26,12 @@ Conduct a comprehensive, diligent code review. Your review should be as thorough
 
 Determine how to get the changes:
 
-**If a Bitbucket PR URL is provided:**
-1. Use `get_pr_diff` from the rovodev MCP tools to fetch the full diff
-2. If the diff is large, also use the Bitbucket MCP tools to get the PR metadata (title, description) for context
+**If a Bitbucket or GitHub PR URL is provided:**
+Use Github (GH CLI) or Bitbucket (BB / TWG CLI) CLI tools to fetch the PR diff. 
+For large changes, fetch the full branch into a separate worktree and use `git diff` to review locally.
 
 **If reviewing local changes:**
-1. Run `git diff` to check for uncommitted local changes
+1. Run `git diff` to check for uncommitted local changes`
 2. If no uncommitted changes, identify the branch:
    - Run `git remote show origin` to identify the default branch
    - Run `git diff <default-branch>...HEAD` to see changes from the default branch to the current branch
